@@ -1,0 +1,24 @@
+{
+  "name": "orangutangular",
+  "version": "1.0.0",
+  "description": "Decision based game powered by AngularJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unconfined/orangutangular.git"
+  },
+  "author": "Ricky Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unconfined/orangutangular/issues"
+  },
+  "homepage": "https://github.com/Unconfined/orangutangular#readme",
+  "dependencies": {
+    "angular": "^1.5.0-beta.0",
+    "bower": "^1.5.2",
+    "jquery": "^2.1.4"
+  }
+}
