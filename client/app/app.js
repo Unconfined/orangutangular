@@ -1,6 +1,10 @@
 angular.module('orangutangular', ['ngRoute'])
 .config(function($routeProvider){
   $routeProvider
+    .when('/', {
+      templateUrl: '/app/views/opening.html',
+      // controller: 'OpeningController'
+    })
     .when('/opening', {
       templateUrl: '/app/views/opening.html',
       // controller: 'OpeningController'
