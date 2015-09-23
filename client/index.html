@@ -8,46 +8,33 @@
 </head>
 <body ng-app="orangutangular" class="">
 
-  <nav>
+  <nav class="main-nav">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">OrangutAngular</a>
+      <a href="#" class="brand-logo center">OrangutAngular</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#/opening">Start</a></li>
+        <li><a href="#/credits.html">Credits</a></li>
       </ul>
     </div>
   </nav>
-
-  <p class="intro center-align valign"></p>
-
-  <!-- This is where scenery views will be rendered according to routes -->
-  <div ng-view></div>
 
   <audio autoplay>
     <source src="assets/jungle.mp3" type="audio/mpeg">
   </audio>
 
+  <!-- This is where scenery views will be rendered according to routes -->
+  <div class="view" ng-view>    
+  </div>
+
+
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="lib/bower_components/angular/angular.min.js"></script>
   <script src="lib/bower_components/angular-route/angular-route.js"></script>
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="lib/bower_components/typed.js/js/typed.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
   <script src="./app/app.js"></script>
-  <script>
-    $(function(){
-        $(".intro").typed({
-            strings: ["Somewhere... deep in the forests of MakerSquaria lies our hero...",
-              "The funny thing about our hero is that he doesn't realize that he's actually a hero...",
-              "Follow the story of Ricky as he realizes his destiny and unlocks the hidden powers that lie dormant within...",
-               "This is the story of....",
-              "O^500R^500A^500N^500G^500U^500T^500A^500N^500G^500U^500L^500A^500R"],
-              typeSpeed: 0,
-            contentType: 'html',
-            backDelay: 2000
-        });
-
-    });
-</script>
+  
 </body>
 </html>
