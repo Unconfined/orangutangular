@@ -2,9 +2,10 @@
   <p class="intro"></p>
   <img id="jeff" src="assets/chewingmonkey.gif">
   <img id="jackie" src="assets/screamingmonkey.gif">
+  <img id="ricky" src="assets/snipe.gif">
   <input type="text" id="snipe" placeholder="ANSWER HERE!" ng-model="answer">
-  <button class="waves-effect waves-light btn-large" id="useScope" ng-if="answer === '$scope'">
-    Use new power!!!!
+  <button class="waves-effect waves-light btn-large" id="useScope" ng-show="answer === '$scope'">
+    Use your scope!!!!
   </button>
 </div>
   <script>
@@ -48,7 +49,8 @@
           var audio2 = $('<audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 1000)"><source src="assets/gunshot.mp3" ></source></audio>');
 
           $('body').append(audio).append(audio2);
-          
+          $('#ricky').toggle();
+          $('#jackie').delay(2500).fadeOut();
         })
 
     });
