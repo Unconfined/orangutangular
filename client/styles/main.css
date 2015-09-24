@@ -1,10 +1,11 @@
 *{
   margin: 0;
+  margin-bottom: 0;
 }
 
 .main-nav{
   background-color: #33691e;
-  border-bottom: 5px black;
+  border-bottom: 10px black;
 }
 
 #mainbutton{
@@ -24,6 +25,57 @@ body{
 .view{
   height: 100%;
 }
+.typed-cursor{
+  display: none;
+}
+
+.brand-logo{
+  margin-left: 10px;
+}
+
+.intro{
+  text-align: center;
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+  top: 60px;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+#jeff{
+  position: relative;
+  display: inline-block;
+  top: 140px;
+  left: 25px;
+  width: 200px;
+  display: none;
+  border: 3px solid white;
+}
+
+#snipe{
+  width: 180px;
+  display: inline-block;
+  padding: 0 7px;
+  border: 2px solid #33691e;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 380px;
+  display: none;
+}
+
+#jackie{
+  position: relative;
+  border: 3px solid white;
+  top: 140px;
+  margin-left: 1000px;
+  width: 200px;
+  height: 200px;
+  display: none;
+}
 
 #forest{
   color: white;
@@ -33,4 +85,9 @@ body{
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+#useScope{
+  background-color: #33691e;
+  border: 2px solid #33691e;
 }

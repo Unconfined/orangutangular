@@ -1,4 +1,4 @@
-angular.module('orangutangular', ['ngRoute'])
+angular.module('orangutangular', ['ngRoute', 'intro'])
 .config(function($routeProvider){
   $routeProvider
     .when('/', {
@@ -11,7 +11,7 @@ angular.module('orangutangular', ['ngRoute'])
     })
     .when('/intro', {
       templateUrl: 'app/views/intro.html',
-      // controller: 'IntroController'
+      controller: 'IntroController'
     })
     .when('/castle', {
       templateUrl: 'app/views/castle.html',

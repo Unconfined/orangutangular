@@ -1,18 +1,55 @@
 <div id="forest">
   <p class="intro"></p>
+  <img id="jeff" src="assets/chewingmonkey.gif">
+  <img id="jackie" src="assets/screamingmonkey.gif">
+  <input type="text" id="snipe" placeholder="ANSWER HERE!" ng-model="answer">
+  <button class="waves-effect waves-light btn-large" id="useScope" ng-if="answer === '$scope'">
+    Use new power!!!!
+  </button>
 </div>
   <script>
     $(function(){
         $(".intro").typed({
             strings: ["Somewhere... deep in the forests of MakerSquaria lies our hero...",
-              "The funny thing about our hero is that he doesn't realize that he's actually a hero...",
+              "The thing about our hero is that he doesn't realize that he's actually a hero...",
               "Follow the story of Ricky as he realizes his destiny and unlocks the hidden powers that lie dormant within...",
                "This is the story of....",
-              "O^500R^500A^500N^500G^500U^500T^500A^500N^500G^500U^500L^500A^500R"],
+              "O^500R^500A^500N^500G^500U^500T^500A^500N^500G^500U^500L^500A^500R",
+              "Jeff: Ricky!!! WAKE UP!!!",
+              "Our friends have been captured!!!!!!!",
+              "They've been taken by the evil trio known as D3!!!",
+              "Their leader is the dangerous Alex and he weilds the DESTRUCTIVE, DEMORALIZING, and DISGUSTING power of the BackboneJS library!!",
+              "His second in command is Robin and...!!!",
+              "Jackie: SHUT UP JEFF!!!! You guys will never save your friends!!!!",
+              "Jeff: Oh no!!! It's Jackie the Controller!!! She's VERY bossy and the third member of D3!!!",
+              "It's a good thing I know her weakness.",
+              "There's something that can take the controller from Jackie!!!",
+              "Quick!!! Think of the object that 'glues' the view to the controller!"
+              ],
               typeSpeed: 0,
             contentType: 'html',
             backDelay: 2000
         });
+
+        setTimeout(function(){
+          $('#jeff').toggle();
+        }, 41000); //41
+        setTimeout(function(){
+          $('#jackie').toggle();
+        }, 73000); //80
+        setTimeout(function(){
+          $('#snipe').toggle();
+        }, 109000);
+        // setTimeout(jackie, 90000);
+        // setTimeout(promt, 130000);
+
+        $('#useScope').on('click', function(){
+          var audio = $('<audio autoplay><source src="assets/guncock.mp3"></source></audio>');
+          var audio2 = $('<audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 1000)"><source src="assets/gunshot.mp3" ></source></audio>');
+
+          $('body').append(audio).append(audio2);
+          
+        })
 
     });
 </script>
